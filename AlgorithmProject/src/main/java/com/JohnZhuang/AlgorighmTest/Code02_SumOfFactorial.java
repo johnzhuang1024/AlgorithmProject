@@ -1,5 +1,9 @@
 package com.JohnZhuang.AlgorighmTest;
 
+import sun.util.calendar.BaseCalendar;
+
+import java.util.Date;
+
 /**
  * @Description:
  * @Author: JohnZhuang1024
@@ -8,9 +12,16 @@ package com.JohnZhuang.AlgorighmTest;
  */
 public class Code02_SumOfFactorial {
     public static void main(String[] args){
-        System.out.println(factorial(5));
-        System.out.println(f1(3));
-        System.out.println(f2(3));
+//        System.out.println(factorial(5));
+        long time_f1_start = System.nanoTime();
+        System.out.println(f1(10));
+        long time_f1_end = System.nanoTime();
+        System.out.println("f1的运行时间是：" + (time_f1_end-time_f1_start));
+
+        long time_f2_start = System.nanoTime();
+        System.out.println(f2(10));
+        long time_f2_end = System.nanoTime();
+        System.out.println("f2的运行时间是：" + (time_f2_end-time_f2_start));
 
     }
 
