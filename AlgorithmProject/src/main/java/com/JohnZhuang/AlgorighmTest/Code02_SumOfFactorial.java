@@ -8,7 +8,7 @@ import java.util.Date;
  * @Description:
  * @Author: JohnZhuang1024
  * @Date: 2023/2/14 11:18
- * @Version：1.0
+ * @Version:1.0
  */
 public class Code02_SumOfFactorial {
     public static void main(String[] args){

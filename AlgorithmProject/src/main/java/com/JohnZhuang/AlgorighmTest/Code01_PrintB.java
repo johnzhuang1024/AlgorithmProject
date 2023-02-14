@@ -4,7 +4,7 @@ package com.JohnZhuang.AlgorighmTest;
  * @Description:
  * @Author: JohnZhuang1024
  * @Date: 2023/2/14 9:29
- * @Version：1.0
+ * @Version:1.0
  */
 public class Code01_PrintB {
     public static void main(String[] args){
