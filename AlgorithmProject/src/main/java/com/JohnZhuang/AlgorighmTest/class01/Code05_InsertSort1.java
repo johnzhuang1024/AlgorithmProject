@@ -1,4 +1,4 @@
-package com.JohnZhuang.AlgorighmTest;
+package com.JohnZhuang.AlgorighmTest.class01;
 
 /**
  * @Description:
@@ -6,7 +6,7 @@ package com.JohnZhuang.AlgorighmTest;
  * @Date: 2023/2/15 9:30
  * @Version: 1.0
  */
-public class Code05_InsertSort {
+public class Code05_InsertSort1 {
 
     // 打印数组
     public static void printArray(int[] arr) {

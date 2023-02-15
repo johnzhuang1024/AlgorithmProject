@@ -1,4 +1,4 @@
-package com.JohnZhuang.AlgorighmTest;
+package com.JohnZhuang.AlgorighmTest.class01;
 
 /**
  * @Description:
