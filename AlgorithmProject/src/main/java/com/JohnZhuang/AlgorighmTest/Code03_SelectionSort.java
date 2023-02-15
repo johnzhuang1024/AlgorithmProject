@@ -40,7 +40,7 @@ public class Code03_SelectionSort {
     }
 
     public static void main(String[] args) {
-        int[] arg = {8, 5, 6, 1, 8, 6, 8, 1, 9, 18};
+        int[] arg = {8, 5, 6, 1, 9, 6, 8, 1, 18, 17};
         printArray(arg);
         selectionSort(arg);
         printArray(arg);
