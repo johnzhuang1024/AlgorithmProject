@@ -3,10 +3,11 @@ package com.JohnZhuang.AlgorighmTest;
 /**
  * @Description:
  * @Author: JohnZhuang1024
- * @Date: 2023/2/15 9:08
+ * @Date: 2023/2/15 9:30
  * @Version: 1.0
  */
-public class Code04_BubbleSort {
+public class Code05_InsertSort {
+
     // 打印数组
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -22,26 +23,22 @@ public class Code04_BubbleSort {
         arr[y] = tmp;
     }
 
-    public static void bubbleSort(int[] arr) {
-        if(arr == null || arr.length < 2){
+    public static void insertSort(int[] arr) {
+        if (arr == null || arr.length < 2) {
             return;
         }
-        // 0~n-1
-        // 0~n-2
-        // 0~n-3
-        // ...
+        // 0~0 完成
         // 0~1
+        // 1~2
+        // 2~3
+        // ...
+        // n-2~n-1
         int n = arr.length;
-        for (int i = n - 1; n > 0; n--) {
-            // 0~1
-            // 1~2
-            // 2~3
-            // ...
-            // n-1~n
-            for (int j = 0; j <= i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    swap(arr, j, j + 1);
-                }
+        for (int i = 1; i <= n - 1; i++) {
+            int endNumindex = i;
+            while(endNumindex-1 >= 0 && arr[endNumindex-1] > arr[endNumindex]){
+                swap(arr,endNumindex-1,endNumindex);
+                endNumindex--;
             }
         }
 
@@ -51,7 +48,7 @@ public class Code04_BubbleSort {
     public static void main(String[] args) {
         int[] arg = {8, 5, 6, 1, 8, 6, 8, 1, 9, 18};
         printArray(arg);
-        bubbleSort(arg);
+        insertSort(arg);
         printArray(arg);
     }
 }
